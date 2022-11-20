@@ -8,24 +8,18 @@ export const Helmet = () => {
       <div className="inside">
         <Row>
           <Col md="5">
-            <Card>
-              <Card.Text>
+            
+              <p>
                 IR Sensor module has great adaptive capability of the ambient
                 light, having a pair of infrared transmitter and the receiver
                 tube, the infrared emitting tube to emit a certain frequency,
-                encounters an obstacle detection direction (reflecting surface),
-                infrared reflected back to the receiver tube receiving, after a
-                comparator circuit processing, the green LED lights up, while
-                the signal output will output digital signal (a low-level
-                signal), through the potentiometer knob to adjust the detection
-                distance, the effective distance range 2 ~ 10cm working voltage
-                of 3.3V-5V.
-              </Card.Text>
-            </Card>
+                encounters an obstacle 
+              </p>
+            
           </Col>
           <Col md="1"></Col>
           <Col md="6">
-            <img src="ir.jpeg" height="300px" />
+            <img src="ir.jpeg" height="150px" />
           </Col>
         </Row>
       </div>

@@ -7,3 +7,13 @@
 .card-title{
     font-size: 50px;
 }
+.good{
+    color: green;
+    font-size: 50px;
+    font-weight: 800;
+}
+.bad{
+    color: red;
+    font-size: 50px;
+    font-weight: 800;
+}

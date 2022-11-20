@@ -23,9 +23,9 @@ export const Monitor = () => {
             <Card.Title>{data.temperature}C</Card.Title>
             <Card.Title>Temperature</Card.Title>
             {data.temperature > 50 ? (
-              <Card.Text>Safe</Card.Text>
+              <Card.Text className="bad">Unsafe</Card.Text>
             ) : (
-              <Card.Text>Not Safe</Card.Text>
+              <Card.Text className="good">Safe</Card.Text>
             )}
 
             <Card.Text>
@@ -42,9 +42,9 @@ export const Monitor = () => {
             <Card.Title>{data.humidity}%</Card.Title>
             <Card.Title>Humidity</Card.Title>
             {data.humidity > 50 ? (
-              <Card.Text>Unsafe</Card.Text>
+              <Card.Text className="bad">Unsafe</Card.Text>
             ) : (
-              <Card.Text> Safe</Card.Text>
+              <Card.Text className="good"> Safe</Card.Text>
             )}
 
             <Card.Text>
@@ -60,10 +60,10 @@ export const Monitor = () => {
           <Card.Body>
             <Card.Title>{data.methane}%</Card.Title>
             <Card.Title>Methane </Card.Title>
-            {data.methane > 50 ? (
-              <Card.Text>Safe</Card.Text>
+            {data.methane > 5 ? (
+              <Card.Text className="bad">Unsafe</Card.Text>
             ) : (
-              <Card.Text>Not Safe</Card.Text>
+              <Card.Text className="good">Safe</Card.Text>
             )}
             <Card.Text>
               If the concentration of methane rises above 15% it is poisonous
